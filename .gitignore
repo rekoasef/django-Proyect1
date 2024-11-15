@@ -1,5 +1,5 @@
 # Ignorar los entornos virtuales en ambas computadoras
-djangoproyecto/
+djangoproyect/
 venv/
 
 # Otros archivos o carpetas que deseas ignorar
@@ -7,3 +7,5 @@ __pycache__/
 *.pyc
 *.pyo
 .DS_Store
+# Ignorar la carpeta de dependencias locales
+djangoproyect/Lib/
