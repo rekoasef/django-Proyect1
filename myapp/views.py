@@ -8,3 +8,6 @@ def otraRuta(request):
 
 def inicio(request):
     return HttpResponse("<h1>Bienvenido a la pagina principal</h1>")
+
+def pidiendoParams(request, name):
+    return HttpResponse(" Bienvenido %s" % name)#Otra forma es %name%
