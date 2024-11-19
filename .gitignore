@@ -1,6 +1,7 @@
 # Ignorar los entornos virtuales en ambas computadoras
 djangoproyect/
 venv/
+env/
 
 # Otros archivos o carpetas que deseas ignorar
 __pycache__/
