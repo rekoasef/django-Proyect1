@@ -6,11 +6,19 @@
         <title>Login - Tecno</title>
     </head>
     <body>
+        {% extends 'base.html' %}
+
+
+        {% block content %}
+
         <h1>Bienvenidos a mis proyectos</h1>
         {% for proyect in proyectos %}
 
         <h3>{{proyect}}</h3>
+        
 
         {% endfor %}
+        {% endblock %}
+
     </body>
 </html>

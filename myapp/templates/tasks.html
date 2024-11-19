@@ -6,6 +6,10 @@
         <title>Login - Tecno</title>
     </head>
     <body>
+        {% extends 'base.html' %}
+
+        {% block content %}
+
         <h1>Bienvenidos a mis Tareas</h1>
         {% for tarea in tarea %}
         <div>
@@ -20,6 +24,7 @@
             </button>
 
             {% endfor %}
+            {% endblock %}
 
             <!-- Agregando condicionales en nuestro html-->
         </div>
