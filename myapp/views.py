@@ -1,6 +1,7 @@
 from django.http import HttpResponse, JsonResponse
 from .models import Proyect, task
-from django.shortcuts import get_object_or_404, render
+from django.shortcuts import get_object_or_404, render, redirect
+from .forms import CreateNewTask
 
 def Saludo(request):
     return HttpResponse("Hello World")
@@ -31,3 +32,12 @@ def Task(request):
     return render(request, "tasks.html", {
         'tarea': tarea
     })
+
+def create_task(request):
+    if request.method == 'GET':
+        return render(request, 'create_task.html',{
+            'form': CreateNewTask()
+        })
+    else:
+        task.objects.create(tittle=request.POST['tittle'], description=request.POST['description'],proyect_id=2)
+        return redirect('/task/')
